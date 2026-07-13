@@ -1,0 +1,61 @@
+
+   /* LIGHT THEME (Default) */
+
+
+:root {
+  --bg: #f8f9fa;
+  --bg-secondary: #ffffff;
+
+  --text: #222222;
+  --text-light: #666666;
+
+  --primary: #ff6b00;
+  --primary-hover: #e65c00;
+
+  --border: #e5e5e5;
+
+  --card: #ffffff;
+
+  --input-bg: #ffffff;
+
+  --shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+
+   /* DARK THEME */
+
+
+body.dark {
+  --bg: #121212;
+  --bg-secondary: #1e1e1e;
+
+  --text: #ffffff;
+  --text-light: #cfcfcf;
+
+  --primary: #ff8c1a;
+  --primary-hover: #ff6b00;
+
+  --border: #3b3b3b;
+
+  --card: #232323;
+
+  --input-bg: #2b2b2b;
+
+  --shadow: 0 10px 30px rgba(0,0,0,.5);
+}
+
+   /* GLOBAL */
+
+*{
+  transition:
+    background-color .25s,
+    color .25s,
+    border-color .25s;
+}
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,162 @@
+.cart-page{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+     background: var(--bg);
+  color: var(--text);
+    
+}
+
+.cart-page h1{
+    margin-bottom:30px;
+}
+
+.cart-container{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:30px;
+}
+
+.cart-items{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.cart-card{
+    display:flex;
+    gap:20px;
+    align-items:center;
+    padding:20px;
+    border-radius:12px;
+    border:1px solid #ddd;
+    background:#fff;
+    
+}
+
+.cart-card img{
+    width:150px;
+    height:150px;
+    object-fit:cover;
+}
+
+.cart-info{
+    flex:1;
+}
+
+.category{
+    color:#666;
+    margin:10px 0;
+}
+
+.quantity{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin:20px 0;
+}
+
+.quantity button{
+    width:35px;
+    height:35px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.remove-btn{
+    background:red;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.cart-summary{
+    border:1px solid #ddd;
+    padding:25px;
+    border-radius:12px;
+    height:fit-content;
+    position:sticky;
+    top:100px;
+}
+
+.summary-row{
+    display:flex;
+    justify-content:space-between;
+    margin:20px 0;
+}
+
+.total{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.checkout-btn{
+    width:100%;
+    padding:15px;
+    background:#111;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    margin-top:20px;
+}
+
+.empty-cart{
+    text-align:center;
+    padding:120px 20px;
+}
+.empty-cart h1{
+    font-size: 20px;
+}
+.empty-para{
+    font-size: 14px;
+}
+.emoji{
+    margin-top: 10px;
+    font-size: 90px;
+     box-shadow: 0px 8px 10px -6px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+
+  .cart-container{
+    grid-template-columns: 1fr;
+  }
+
+  .cart-card{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cart-card img{
+    width: 180px;
+    height: 180px;
+  }
+
+  .cart-info{
+    width: 100%;
+  }
+
+  .quantity{
+    justify-content: center;
+  }
+
+  .remove-btn{
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .cart-summary{
+    position: static;
+    width: 100%;
+  }
+
+  .checkout-btn{
+    width: 100%;
+  }
+
+}

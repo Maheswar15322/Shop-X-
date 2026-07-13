@@ -1,0 +1,299 @@
+/* HERO SECTION */
+
+.hero {
+  width: 90%;
+  max-width: 1200px;
+  margin: 60px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* LEFT */
+
+.hero-left {
+  flex: 1;
+}
+
+.offer {
+  display: inline-block;
+  background: #dbeafe;
+  color: #2563eb;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.hero-left h1 {
+  font-size: clamp(2.5rem, 5vw, 4.2rem);
+  line-height: 1.2;
+  margin: 25px 0;
+  color: var(--text);
+}
+
+.hero-left h1 span {
+  color: var(--primary);
+}
+
+.hero-left p {
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  color: var(--text-light);
+  line-height: 1.8;
+  margin-bottom: 35px;
+  max-width: 550px;
+}
+
+/* BUTTONS */
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.shop-btn,
+.explore-btn {
+  padding: 15px 35px;
+  border-radius: 40px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#NavLink{
+  border-radius: 40px;
+}
+
+.shop-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+}
+
+.shop-btn:hover {
+  background: #1d4ed8;
+}
+
+.explore-btn {
+  background: white;
+  color: #2563eb;
+  border: 2px solid #2563eb;
+}
+
+.explore-btn:hover {
+  background: #2563eb;
+  color: white;
+}
+
+/* STATS */
+
+.hero-info {
+  display: flex;
+  gap: 50px;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+
+.hero-info h2 {
+  color: #2563eb;
+  margin-bottom: 5px;
+  font-size: 30px;
+}
+
+.hero-info p {
+  margin: 0;
+  color: #555;
+  font-size: 15px;
+   color: var(--text-light);
+}
+
+/* RIGHT */
+
+.hero-right {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Background Circle */
+
+.circle {
+  position: absolute;
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 1;
+  background: #dbeafe;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+/* Hero Image */
+
+.hero-right img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* Discount Card */
+
+.discount-card {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: white;
+  padding: 18px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  z-index: 3;
+}
+
+.discount-card h3 {
+  color: #ef4444;
+  margin-bottom: 5px;
+}
+
+/* Shipping Card */
+
+.shipping-card {
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+  background: white;
+  padding: 15px 22px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  z-index: 3;
+  font-weight: 600;
+}
+
+/* LAPTOP */
+
+@media (max-width: 1200px) {
+  .hero {
+    gap: 40px;
+  }
+
+  .hero-right img {
+    max-width: 400px;
+  }
+}
+
+/* TABLET */
+
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-left p {
+    max-width: 100%;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-info {
+    justify-content: center;
+  }
+
+  .hero-right {
+    margin-top: 30px;
+  }
+
+  .discount-card {
+    left: 20px;
+  }
+
+  .shipping-card {
+    right: 20px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .hero {
+    margin: 40px auto;
+    gap: 40px;
+  }
+
+  .hero-left h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .shop-btn,
+  .explore-btn {
+    width: 220px;
+  }
+
+  .hero-info {
+    gap: 25px;
+  }
+
+  .hero-right img {
+    max-width: 300px;
+  }
+
+  .circle {
+    max-width: 320px;
+  }
+
+  .discount-card,
+  .shipping-card {
+    position: static;
+    margin-top: 20px;
+  }
+
+  .hero-right {
+    flex-direction: column;
+  }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 480px) {
+  .hero-left h1 {
+    font-size: 2rem;
+  }
+
+  .hero-left p {
+    font-size: 15px;
+  }
+
+  .offer {
+    font-size: 13px;
+  }
+
+  .hero-info {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero-right img {
+    max-width: 240px;
+  }
+
+  .circle {
+    max-width: 250px;
+  }
+
+  .shop-btn,
+  .explore-btn {
+    width: 100%;
+  }
+}

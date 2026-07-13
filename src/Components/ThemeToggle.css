@@ -1,0 +1,55 @@
+.theme-btn {
+  width: 64px;
+  height: 34px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 4px;
+
+  background: linear-gradient(135deg, #ffe259, #ffa751);
+  transition: all 0.35s ease;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.theme-btn svg {
+  width: 22px;
+  height: 22px;
+
+  background: #fff;
+  border-radius: 50%;
+  padding: 5px;
+
+  color: #ff9800;
+
+  transition: all 0.35s ease;
+}
+
+/* Dark Theme */
+body.dark .theme-btn {
+  justify-content: flex-end;
+
+  background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+body.dark .theme-btn svg {
+  background: #2c2c2c;
+  color: #ffd43b;
+
+  transform: rotate(180deg);
+}
+
+/* Hover */
+.theme-btn:hover {
+  transform: scale(1.05);
+}
+
+.theme-btn:active {
+  transform: scale(0.95);
+}
