@@ -5,7 +5,7 @@ import {
   signInWithEmailAndPassword,
   signOut,
   onAuthStateChanged,
-} from "firebase/auth";
+} from "Firebase/auth";
 
 import { auth } from "../Firebase/Firebase";
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./Components/Navbar.jsx";
+import Navbar from "./Components/Navbar";
 import Home from "./Pages/Home";
 import Shop from "./Pages/Shop";
 import Cart from "./Pages/Cart";
@@ -10,11 +10,12 @@ import Register from "./Pages/Register";
 import ProductDetails from "./Pages/ProductDetails";
 import Checkout from "./Pages/Checkout";
 import OrderSuccess from "./Pages/OrderSuccess";
-import Footer from "./Components/Footer.jsx";
-import Categories from "./Components/Categories.jsx";
-import About from "./Pages/About.jsx";
-import Contact from "./Pages/Contact.jsx";
-import Payment from "./Pages/Payment.jsx";
+import Footer from "./Components/Footer";
+import Categories from "./Components/Categories";
+import About from "./Pages/About";
+import Contact from "./Pages/Contact";
+import Payment from "./Pages/Payment";
+
 
 const App = () => {
   return (
