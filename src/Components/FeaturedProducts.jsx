@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./FeaturedProducts.css";
-import ProductCard from "./ProductCard";
+import ProductCard from "./Components/ProductCard";
 
 const FeaturedProducts = () => {
 
