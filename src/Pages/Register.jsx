@@ -9,9 +9,9 @@ import {
   FaEyeSlash,
 } from "react-icons/fa";
 import toast from "react-hot-toast";
-import { useAuth } from "../context/AuthContext";
-import { updateProfile } from "firebase/auth";
-import { auth } from "../firebase/firebase";
+import { useAuth } from "../Context/AuthContext";
+import { updateProfile } from "Firebase/auth";
+import { auth } from "../Firebase/Firebase";
 
 const Register = () => {
   const navigate = useNavigate();

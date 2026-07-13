@@ -1,5 +1,5 @@
 import "./OfferBanner.css";
-import bannerImage from "../assets/offerbanner.jpeg";
+import bannerImage from "../assets/offerBanner.jpeg";
 import { NavLink } from "react-router-dom";
 
 const OfferBanner = () => {
